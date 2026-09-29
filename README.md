@@ -63,6 +63,51 @@ python3 scripts/scan.py examples/sample_article.txt
 
 ---
 
+## 怎么安装
+
+三种方式，任选一种。**前提：你用支持 `SKILL.md` 的 Agent**（Hermes、Claude Code 等）。
+
+### 方式一：让 Agent 自己装（推荐）
+
+```bash
+hermes skills install <owner>/<repo>
+```
+
+装完验证：
+
+```
+skills_list()            # 确认已注册
+skill_view(name='knowledge-agent-playbook')
+```
+
+⚠️ **注意**：Agent 按 **SKILL.md frontmatter 里的 `name:`** 注册，⛔ **不是按仓库目录名**。
+
+### 方式二：加为技能源（tap）
+
+```bash
+hermes skills tap add <owner>/<repo>
+hermes skills search knowledge
+```
+
+### 方式三：手工 clone
+
+```bash
+git clone --depth 1 https://github.com/<owner>/<repo>.git
+cp -r <repo> ~/.hermes/profiles/<your-profile>/skills/<category>/knowledge-agent-playbook
+```
+
+⭐ **至少保留** `SKILL.md` ＋ `references/` ＋ `LICENSE`。
+
+### 只想用那个扫描器？
+
+⭐ **不需要装任何东西** —— `scripts/scan.py` **零依赖**，Python 3.8+ 直接跑：
+
+```bash
+python3 scripts/scan.py your_article.txt
+```
+
+---
+
 ## 内容
 
 ```

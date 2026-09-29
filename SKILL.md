@@ -1,6 +1,7 @@
 ---
 name: knowledge-agent-playbook
-description: Use when building, running or auditing a personal/AI-agent knowledge base — screening external material before citing it, reading multi-part series completely, turning an archive into a queryable graph, and keeping long task chains from silently dropping work. Five practices, each with the operational test that makes it enforced rather than aspirational.
+version: 1.0.0
+description: Use when building, running or auditing a personal or agent knowledge base — vetting sources before citing, reading multi-part series fully, turning an archive into a queryable graph, and stopping long task chains from silently dropping work. Five practices; each ships with the test that makes it enforced rather than aspirational.
 ---
 
 # 一个称职知识智能体的五本武功秘笈 · knowledge-agent-playbook
