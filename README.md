@@ -1,5 +1,7 @@
 # knowledge-agent-playbook · 一个称职知识智能体的五本武功秘笈
 
+> **作者：墨鸦** ｜ [www.afnas.com.cn](https://www.afnas.com.cn)
+>
 > **五个方法，各自防一类事故。**
 > 每一条都落到一样**机械的东西**上：一份清单、一个文件、一个脚本、一个每周响一次的闹钟。
 
@@ -155,4 +157,4 @@ python3 scripts/scan.py your_article.txt
 
 ## 许可
 
-MIT
+MIT —— 署名 **墨鸦**（[www.afnas.com.cn](https://www.afnas.com.cn)）。
