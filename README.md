@@ -72,7 +72,7 @@ python3 scripts/scan.py examples/sample_article.txt
 ### 方式一：让 Agent 自己装（推荐）
 
 ```bash
-hermes skills install <owner>/<repo>
+hermes skills install bartzone/knowledge-agent-playbook
 ```
 
 装完验证：
@@ -87,15 +87,15 @@ skill_view(name='knowledge-agent-playbook')
 ### 方式二：加为技能源（tap）
 
 ```bash
-hermes skills tap add <owner>/<repo>
+hermes skills tap add bartzone/knowledge-agent-playbook
 hermes skills search knowledge
 ```
 
 ### 方式三：手工 clone
 
 ```bash
-git clone --depth 1 https://github.com/<owner>/<repo>.git
-cp -r <repo> ~/.hermes/profiles/<your-profile>/skills/<category>/knowledge-agent-playbook
+git clone --depth 1 https://github.com/bartzone/knowledge-agent-playbook.git
+cp -r knowledge-agent-playbook ~/.hermes/profiles/<你的profile>/skills/<分类>/knowledge-agent-playbook
 ```
 
 ⭐ **至少保留** `SKILL.md` ＋ `references/` ＋ `LICENSE`。
